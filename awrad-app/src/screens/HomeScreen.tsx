@@ -1,11 +1,12 @@
 import { View, Text, StyleSheet } from 'react-native';
+import Header from '../components/Header';
+import AwradCard from '../components/AwraadCard';
 
 export default function HomeScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Assalamu Alaikum</Text>
-
-      <Text style={styles.subtitle}>Welcome to Awrad App</Text>
+      <Header />
+      <AwradCard />
     </View>
   );
 }
@@ -13,11 +14,9 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
   },
   title: {
-    fontSize: 22,
+    fontSize: 26,
     fontWeight: '600',
   },
   subtitle: {
